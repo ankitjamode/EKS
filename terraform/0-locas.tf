@@ -6,3 +6,4 @@ locals {
   eks_name    = "demo"
   eks_version = "1.31"
 }
+/*notes*/
