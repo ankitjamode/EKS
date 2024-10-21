@@ -25,6 +25,8 @@ jobs:
 
     # Initialize a new or existing Terraform working directory and validate
     - name: Terraform Init
+      env:
+          TF_BACKEND_MIGRATE: true
       run: |
         cd terraform 
         terraform init
