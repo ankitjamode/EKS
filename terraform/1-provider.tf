@@ -11,4 +11,14 @@ terraform {
       version = "~> 5.49"
     }
   }
+  backend "s3" {
+    bucket         = "terrafrom-backend-ankit"  
+    key            = "state.tfstate"            
+    region         = "us-east-1"                  
+    dynamodb_table = "terraform-lock"              
+    //encrypt        = true                          
+  }
+
 }
+
+
