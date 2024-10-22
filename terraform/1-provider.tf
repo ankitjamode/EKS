@@ -14,7 +14,7 @@ terraform {
   backend "s3" {
     bucket         = "terrafrom-backend-ankit"  
     key            = "terraform/state"            
-    region         = local.region                
+    region         = "us-east-1"                  
     dynamodb_table = "terraform-lock"              
     //encrypt        = true                          
   }
