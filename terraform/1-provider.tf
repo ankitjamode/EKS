@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 terraform {
-  backend "s3" {
+  /*backend "s3" {
     bucket         = "terrafrom-backend-ankit"  
     key            = "terraform/state"            
     region         = "us-east-1"                  
     dynamodb_table = "terraform-lock"              
     encrypt        = true                          
-  }
+  }*/
 
 
   required_version = ">= 1.0"
